@@ -1,0 +1,73 @@
+#playerTurn {
+  color: blue;
+}
+
+.gameBoard {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+#boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: orange;
+  background-color: indigo;
+  border: 1px solid white;
+  padding: 1rem;
+  width: 7vw;
+  height: 3vw;
+  font-size: 1.5vw;
+}
+
+#userInput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  padding: 0.25rem;
+  border: 1px solid darkorange;
+}
+
+.buttonsContainer {
+  display: flex;
+  justify-content: center;
+}
+
+#buttons {
+  display: flex;
+  color: white;
+  background-color: blue;
+}
+
+.scores {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  margin-top: 1rem;
+}
+
+.nextRoundButtonContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+#actualButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: blue;
+  height: 3rem;
+  width: 5rem;
+  margin-top: 1rem;
+  font-size: medium;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

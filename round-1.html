@@ -1,12 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jeopardy</title>
-</head>
-<body>
-  <h1>Round One</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jeopardy</title>
+    <link href="styles/index.css" rel="stylesheet" type="text/css" />
+    <link href="styles/rounds1&2.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1 id="title">Round One</h1>
+    <section class="mainPage">
+      <h2 id="playerTurn">PLAYER TURN</h2>
+      <section class="gameBoard">
+        <div id="boxes">CATEGORY</div>
+        <div id="boxes">CATEGORY</div>
+        <div id="boxes">CATEGORY</div>
+        <div id="boxes">CATEGORY</div>
+        <div id="boxes">CATEGORY</div>
+        <div id="boxes">CATEGORY</div>
+        <div id="boxes">100</div>
+        <div id="boxes">100</div>
+        <div id="boxes">100</div>
+        <div id="boxes">100</div>
+        <div id="boxes">100</div>
+        <div id="boxes">100</div>
+        <div id="boxes">200</div>
+        <div id="boxes">200</div>
+        <div id="boxes">200</div>
+        <div id="boxes">200</div>
+        <div id="boxes">200</div>
+        <div id="boxes">200</div>
+        <div id="boxes">300</div>
+        <div id="boxes">300</div>
+        <div id="boxes">300</div>
+        <div id="boxes">300</div>
+        <div id="boxes">300</div>
+        <div id="boxes">300</div>
+        <div id="boxes">400</div>
+        <div id="boxes">400</div>
+        <div id="boxes">400</div>
+        <div id="boxes">400</div>
+        <div id="boxes">400</div>
+        <div id="boxes">400</div>
+        <div id="boxes">500</div>
+        <div id="boxes">500</div>
+        <div id="boxes">500</div>
+        <div id="boxes">500</div>
+        <div id="boxes">500</div>
+        <div id="boxes">500</div>
+      </section>
+      <input id="userInput" type="text" placeholder="What is..." />
+      <section class="buttonsContainer">
+        <button id="buttons">GUESS</button>
+        <button id="buttons">PASS</button>
+      </section>
+    </section>
+    <section class="scores">
+      <div>Player 1 Score: 0</div>
+      <div>Player 2 Score: 0</div>
+    </section>
+    <section class="nextRoundButtonContainer">
+      <button id="actualButton">
+        <a href="round-2.html" id="buttonText">NEXT ROUND</a>
+      </button>
+    </section>
+
+    <footer id="footer">Created by Leah Niemasz-Cavanagh</footer>
+  </body>
 </html>

@@ -1,0 +1,19 @@
+#finalCategory {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#finalQ {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  padding: 5rem;
+  color: orange;
+  background-color: indigo;
+  font-size: x-large;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  width: 30vw;
+  height: 10vw;
+}

@@ -1,0 +1,61 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: deepskyblue;
+}
+
+#title {
+  display: flex;
+  justify-content: center;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  color: darkorange;
+  -webkit-text-stroke: 2px indigo;
+  font-size: xxx-large;
+  font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+.mainPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#firstPageLogo {
+  margin-left: 5rem;
+  margin-right: 5rem;
+  border: 1px solid white;
+  margin: 2rem;
+  width: 80vw;
+}
+
+.playButton {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 1.5rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  padding: 1rem;
+  background-color: blue;
+  color: white;
+}
+
+#buttonText {
+  color: whitesmoke;
+  font-size: medium;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration-line: none;
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  margin: 3rem;
+  margin-bottom: 2rem;
+  color: purple;
+  font-family: cursive;
+}
