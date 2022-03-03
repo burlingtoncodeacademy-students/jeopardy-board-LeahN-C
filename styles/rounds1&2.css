@@ -1,73 +1,129 @@
+/*Player Turn title*/
 #playerTurn {
+  /*Text color*/
   color: blue;
 }
 
+/*Game Board*/
 .gameBoard {
+  /*Using Grid display*/
   display: grid;
+  /*Six rows*/
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  /*Six columns*/
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
+/*Boxes in Game Board*/
 #boxes {
+  /*FlexBox display*/
   display: flex;
+  /*Horizontal content alignment*/
   justify-content: center;
+  /*Verticle alignment of items*/
   align-items: center;
+  /*Text color*/
   color: orange;
+  /*Color of boxes*/
   background-color: indigo;
+  /*Color between boxes*/
   border: 1px solid white;
+  /*Padding space within each box*/
   padding: 1rem;
+  /*Width of each box*/
   width: 7vw;
-  height: 3vw;
-  font-size: 1.5vw;
+  /*Height of each box*/
+  height: .5vh;
+  /*Size of text in boxes*/
+  font-size: 1.25vw;
 }
 
+/*User Input Box*/
 #userInput {
+  /*FlexBox*/
   display: flex;
+  /*Horizontal alignment*/
   justify-content: center;
+  /*Verticle alignment*/
   align-items: center;
+  /*Margin around input box*/
   margin: 1rem;
+  /*Left side margin*/
   margin-left: 5rem;
+  /*Right side margin*/
   margin-right: 5rem;
+  /*Padding space within box*/
   padding: 0.25rem;
+  /*Border around text box*/
   border: 1px solid darkorange;
 }
 
+/*Guess and Pass buttons*/
 .buttonsContainer {
+  /*FlexBox*/
   display: flex;
+  /*Horizontally centered*/
   justify-content: center;
 }
 
+/*All buttons*/
 #buttons {
+  /*FlexBox*/
   display: flex;
+  /*Text color*/
   color: white;
+  /*Button color*/
   background-color: blue;
 }
 
+/*Player Scores*/
 .scores {
+  /*FlexBox*/
   display: flex;
+  /*Organized in a row*/
   flex-direction: row;
+  /*Horizontally spaced with space around each*/
   justify-content: space-around;
+  /*Left margin space*/
   margin-left: 5rem;
+  /*Right margin space*/
   margin-right: 5rem;
+  /*Top margin space*/
   margin-top: 1rem;
 }
 
+/*The Next Button*/
 .nextRoundButtonContainer {
+  /*FlexBox*/
   display: flex;
+  /*Horizontal alignment - right side of the page (end)*/
   justify-content: flex-end;
+  /*Left margin*/
   margin-left: 5rem;
+  /*Right margin*/
   margin-right: 5rem;
 }
 
+/*Next Button Content*/
 #actualButton {
+  /*FlexBox*/
   display: flex;
+  /*Horizontally centered text*/
   justify-content: center;
+  /*Vertically centered text*/
   align-items: center;
+  /*Text color*/
   color: white;
+  /*Button color*/
   background-color: blue;
+  /*Height of button*/
   height: 3rem;
+  /*Width of button*/
   width: 5rem;
+  /*Space above button*/
   margin-top: 1rem;
+  /*Size of font*/
   font-size: medium;
+  /*Font style*/
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

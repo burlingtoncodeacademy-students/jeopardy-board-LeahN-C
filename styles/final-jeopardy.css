@@ -1,19 +1,37 @@
+/*Text right above Final Q Box*/
 #finalCategory {
+  /*FlexBox display*/
   display: flex;
+  /*Vertical alignment*/
   justify-content: center;
+  /*Horizontal alignment*/
   align-items: center;
+  /*Size of font*/
+  font-size: large;
 }
 
+/*Final Question Box*/
 #finalQ {
+  /*FlexBox*/
   display: flex;
+  /*Vertically centered*/
   justify-content: center;
+  /*Horizontally centered*/
   align-items: center;
+  /*Border around box*/
   border: 2px solid white;
-  padding: 5rem;
+  /*Padding space within box*/
+  padding: 4rem;
+  /*Text color*/
   color: orange;
+  /*Box color*/
   background-color: indigo;
+  /*Font size*/
   font-size: x-large;
+  /*Font style*/
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  width: 30vw;
-  height: 10vw;
+  /*Width of box*/
+  width: 20vw;
+  /*Height of box*/
+  height: 5vw;
 }
