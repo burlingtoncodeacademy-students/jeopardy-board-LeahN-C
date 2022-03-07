@@ -27,7 +27,7 @@ body {
   /*Outline color of text - SO COOL!!*/
   -webkit-text-stroke: 2px indigo;
   /*Size of font*/
-  font-size: xxx-large;
+  font-size: xx-large;
   /*Font style*/
   font-family: Georgia, Times, "Times New Roman", serif;
 }
@@ -81,7 +81,7 @@ body {
 }
 
 /*Text on All Buttons*/
-#buttonText {
+.buttonText {
   /*Text color on all buttons*/
   color: whitesmoke;
   /*Font size on all buttons*/

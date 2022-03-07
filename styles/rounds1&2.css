@@ -2,6 +2,8 @@
 #playerTurn {
   /*Text color*/
   color: blue;
+  /*Size of font*/
+  font-size: x-large;
 }
 
 /*Game Board*/
@@ -14,8 +16,8 @@
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
-/*Boxes in Game Board*/
-#boxes {
+/*Categories in Game Board*/
+.categories {
   /*FlexBox display*/
   display: flex;
   /*Horizontal content alignment*/
@@ -29,17 +31,43 @@
   /*Color between boxes*/
   border: 1px solid white;
   /*Padding space within each box*/
-  padding: 1rem;
+  padding: 1.25rem;
   /*Width of each box*/
-  width: 7vw;
+  width: 8vw;
   /*Height of each box*/
-  height: .5vh;
+  height: 2.5vh;
   /*Size of text in boxes*/
   font-size: 1.25vw;
 }
 
+/*Boxes in Game Board*/
+.boxes {
+  /*FlexBox display*/
+  display: flex;
+  /*Horizontal content alignment*/
+  justify-content: center;
+  /*Verticle alignment of items*/
+  align-items: flex-start;
+  /*Text color*/
+  color: orange;
+  /*Color of boxes*/
+  background-color: indigo;
+  /*Color between boxes*/
+  border: 1px solid white;
+  /*Padding space within each box*/
+  padding: 1.25rem;
+  /*Width of each box*/
+  width: 8vw;
+  /*Height of each box*/
+  height: 2.5vh;
+  /*Size of text in boxes*/
+  font-size: 1.25vw;
+  /*Text is limited to box*/
+  overflow: auto;
+}
+
 /*User Input Box*/
-#userInput {
+.userInput {
   /*FlexBox*/
   display: flex;
   /*Horizontal alignment*/
@@ -67,7 +95,7 @@
 }
 
 /*All buttons*/
-#buttons {
+.buttons {
   /*FlexBox*/
   display: flex;
   /*Text color*/
@@ -105,7 +133,7 @@
 }
 
 /*Next Button Content*/
-#actualButton {
+.actualButton {
   /*FlexBox*/
   display: flex;
   /*Horizontally centered text*/
@@ -127,3 +155,4 @@
   /*Font style*/
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+

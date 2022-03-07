@@ -1,3 +1,4 @@
+<!--Boiler Plate-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -8,77 +9,83 @@
     <link href="styles/index.css" rel="stylesheet" type="text/css" />
     <link href="styles/rounds1&2.css" rel="stylesheet" type="text/css" />
   </head>
+  <!--Body Element-->
   <body>
     <!--Title-->
     <h1 id="title">Round Two</h1>
     <!--Main Page Section-->
     <section class="mainPage">
+      <!--Banner to display player turn-->
       <h2 id="playerTurn">PLAYER TURN</h2>
       <!--Game Board-->
       <section class="gameBoard">
         <!--Categories-->
-        <div id="boxes">CATEGORY</div>
-        <div id="boxes">CATEGORY</div>
-        <div id="boxes">CATEGORY</div>
-        <div id="boxes">CATEGORY</div>
-        <div id="boxes">CATEGORY</div>
-        <div id="boxes">CATEGORY</div>
+        <div class="categories">NATURE</div>
+        <div class="categories">ANIMALS</div>
+        <div class="categories">COMPUTERS</div>
+        <div class="categories">MYTHOLOGY</div>
+        <div class="categories">HISTORY</div>
+        <div class="categories">GENERAL</div>
         <!--$200 Boxes-->
-        <div id="boxes">200</div>
-        <div id="boxes">200</div>
-        <div id="boxes">200</div>
-        <div id="boxes">200</div>
-        <div id="boxes">200</div>
-        <div id="boxes">200</div>
+        <div class="boxes">200</div>
+        <div class="boxes">200</div>
+        <div class="boxes">200</div>
+        <div class="boxes">200</div>
+        <div class="boxes">200</div>
+        <div class="boxes">200</div>
         <!--$400 Boxes-->
-        <div id="boxes">400</div>
-        <div id="boxes">400</div>
-        <div id="boxes">400</div>
-        <div id="boxes">400</div>
-        <div id="boxes">400</div>
-        <div id="boxes">400</div>
+        <div class="boxes">400</div>
+        <div class="boxes">400</div>
+        <div class="boxes">400</div>
+        <div class="boxes">400</div>
+        <div class="boxes">400</div>
+        <div class="boxes">400</div>
         <!--$600 Boxes-->
-        <div id="boxes">600</div>
-        <div id="boxes">600</div>
-        <div id="boxes">600</div>
-        <div id="boxes">600</div>
-        <div id="boxes">600</div>
-        <div id="boxes">600</div>
+        <div class="boxes">600</div>
+        <div class="boxes">600</div>
+        <div class="boxes">600</div>
+        <div class="boxes">600</div>
+        <div class="boxes">600</div>
+        <div class="boxes">600</div>
         <!--$800 Boxes-->
-        <div id="boxes">800</div>
-        <div id="boxes">800</div>
-        <div id="boxes">800</div>
-        <div id="boxes">800</div>
-        <div id="boxes">800</div>
-        <div id="boxes">800</div>
+        <div class="boxes">800</div>
+        <div class="boxes">800</div>
+        <div class="boxes">800</div>
+        <div class="boxes">800</div>
+        <div class="boxes">800</div>
+        <div class="boxes">800</div>
         <!--$1000 Boxes-->
-        <div id="boxes">1000</div>
-        <div id="boxes">1000</div>
-        <div id="boxes">1000</div>
-        <div id="boxes">1000</div>
-        <div id="boxes">1000</div>
-        <div id="boxes">1000</div>
+        <div class="boxes">1000</div>
+        <div class="boxes">1000</div>
+        <div class="boxes">1000</div>
+        <div class="boxes">1000</div>
+        <div class="boxes">1000</div>
+        <div class="boxes">1000</div>
       </section>
-      <!--Place Where User Inputs Answer-->
-      <input id="userInput" type="text" placeholder="What is..." />
-      <!--Buttons to Guess or Pass-->
-      <section class="buttonsContainer">
-        <button id="buttons">GUESS</button>
-        <button id="buttons">PASS</button>
-      </section>
+      <!--Form for user to input answer-->
+      <form id="guessForm">
+        <!--Place Where User Inputs Answer-->
+        <input class="userInput" type="text" placeholder="What is..." />
+        <!--Buttons to Guess or Pass-->
+        <section class="buttonsContainer">
+          <button class="buttons" id="guessButton" type="submit">GUESS</button>
+          <button class="buttons" id="passButton">PASS</button>
+        </section>
+      </form>
     </section>
     <!--Player Scores-->
     <section class="scores">
-      <div>Player 1 Score: 0</div>
-      <div>Player 2 Score: 0</div>
+      <div id="playerOneScore">Player 1 Score: 0</div>
+      <div id="playerTwoScore">Player 2 Score: 0</div>
     </section>
     <!--Button to go to Next Round-->
     <section class="nextRoundButtonContainer">
-      <button id="actualButton">
-        <a href="final-jeopardy.html" id="buttonText">NEXT ROUND</a>
-      </button>
+      <a href="final-jeopardy.html" class="buttonText" id="nextPage">
+        <button class="actualButton" id="nextRound">NEXT ROUND</button>
+      </a>
     </section>
     <!--Footer-->
     <footer id="footer">Created by Leah Niemasz-Cavanagh</footer>
+    <script src="index.js"></script>
   </body>
 </html>

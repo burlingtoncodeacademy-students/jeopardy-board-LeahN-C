@@ -1,3 +1,4 @@
+<!--Boiler Plate-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -8,84 +9,95 @@
     <link href="styles/index.css" rel="stylesheet" type="text/css" />
     <link href="styles/rounds1&2.css" rel="stylesheet" type="text/css" />
   </head>
-  <!--Audio with controls to play music-->
-<audio controls>
-  <source src="~/code/SDB2022/projects/jeopardy-board-LeahN-C/audio/Jeopardy-theme-song.mp3" type="audio/mpeg">
-  <source src="Jeopardy-theme-song.ogg" type="audio/ogg">
-  <p>Your browser doesn't support HTML5 audio. Here is
-     a <a href="Jeopardy-theme-song.mp3">link to the audio</a> instead.</p>
-</audio>
+  <!--Audio with controls to play music (DOESN'T WORK)-->
+  <audio controls>
+    <source
+      src="~/code/SDB2022/projects/jeopardy-board-LeahN-C/audio/Jeopardy-theme-song.mp3"
+      type="audio/mpeg"
+    />
+    <source src="Jeopardy-theme-song.ogg" type="audio/ogg" />
+    <p>
+      Your browser doesn't support HTML5 audio. Here is a
+      <a href="Jeopardy-theme-song.mp3">link to the audio</a> instead.
+    </p>
+  </audio>
+  <!--Page Body-->
   <body>
     <!--Title-->
     <h1 id="title">Round One</h1>
     <!--Main Page Section-->
     <section class="mainPage">
+      <!--Banner to display who's turn it is-->
       <h2 id="playerTurn">PLAYER TURN</h2>
       <!--Game Board with All of the Boxes-->
       <section class="gameBoard">
         <!--Category Titles-->
-        <div id="boxes">CATEGORY</div>
-        <div id="boxes">CATEGORY</div>
-        <div id="boxes">CATEGORY</div>
-        <div id="boxes">CATEGORY</div>
-        <div id="boxes">CATEGORY</div>
-        <div id="boxes">CATEGORY</div>
+        <div class="categories">NATURE</div>
+        <div class="categories">ANIMALS</div>
+        <div class="categories">COMPUTERS</div>
+        <div class="categories">MYTHOLOGY</div>
+        <div class="categories">HISTORY</div>
+        <div class="categories">GENERAL</div>
         <!--$100 Boxes-->
-        <div id="boxes">100</div>
-        <div id="boxes">100</div>
-        <div id="boxes">100</div>
-        <div id="boxes">100</div>
-        <div id="boxes">100</div>
-        <div id="boxes">100</div>
+        <div class="boxes">100</div>
+        <div class="boxes">100</div>
+        <div class="boxes">100</div>
+        <div class="boxes">100</div>
+        <div class="boxes">100</div>
+        <div class="boxes">100</div>
         <!--$200 Boxes-->
-        <div id="boxes">200</div>
-        <div id="boxes">200</div>
-        <div id="boxes">200</div>
-        <div id="boxes">200</div>
-        <div id="boxes">200</div>
-        <div id="boxes">200</div>
+        <div class="boxes">200</div>
+        <div class="boxes">200</div>
+        <div class="boxes">200</div>
+        <div class="boxes">200</div>
+        <div class="boxes">200</div>
+        <div class="boxes">200</div>
         <!--$300 Boxes-->
-        <div id="boxes">300</div>
-        <div id="boxes">300</div>
-        <div id="boxes">300</div>
-        <div id="boxes">300</div>
-        <div id="boxes">300</div>
-        <div id="boxes">300</div>
+        <div class="boxes">300</div>
+        <div class="boxes">300</div>
+        <div class="boxes">300</div>
+        <div class="boxes">300</div>
+        <div class="boxes">300</div>
+        <div class="boxes">300</div>
         <!--$400 Boxes-->
-        <div id="boxes">400</div>
-        <div id="boxes">400</div>
-        <div id="boxes">400</div>
-        <div id="boxes">400</div>
-        <div id="boxes">400</div>
-        <div id="boxes">400</div>
+        <div class="boxes">400</div>
+        <div class="boxes">400</div>
+        <div class="boxes">400</div>
+        <div class="boxes">400</div>
+        <div class="boxes">400</div>
+        <div class="boxes">400</div>
         <!--$500 Boxes-->
-        <div id="boxes">500</div>
-        <div id="boxes">500</div>
-        <div id="boxes">500</div>
-        <div id="boxes">500</div>
-        <div id="boxes">500</div>
-        <div id="boxes">500</div>
+        <div class="boxes">500</div>
+        <div class="boxes">500</div>
+        <div class="boxes">500</div>
+        <div class="boxes">500</div>
+        <div class="boxes">500</div>
+        <div class="boxes">500</div>
       </section>
-      <!--Where User Inputs Answer-->
-      <input id="userInput" type="text" placeholder="What is..." />
-      <!--Buttons for Guessing Answer or Passing-->
-      <section class="buttonsContainer">
-        <button id="buttons">GUESS</button>
-        <button id="buttons">PASS</button>
-      </section>
+      <!--Form Element for user to submit response-->
+      <form id="guessForm">
+        <!--Input Element, where User Inputs Answer-->
+        <input class="userInput" type="text" placeholder="What is..." />
+        <!--Buttons for Guessing Answer or Passing-->
+        <section class="buttonsContainer">
+          <button class="buttons" id="guessButton" type="submit">GUESS</button>
+          <button class="buttons" id="passButton">PASS</button>
+        </section>
+      </form>
     </section>
     <!--Player Scores-->
     <section class="scores">
-      <div>Player 1 Score: 0</div>
-      <div>Player 2 Score: 0</div>
+      <div id="playerOneScore">Player 1 Score: 0</div>
+      <div id="playerTwoScore">Player 2 Score: 0</div>
     </section>
     <!--Button to go to Next Round-->
     <section class="nextRoundButtonContainer">
-      <button id="actualButton">
-        <a href="round-2.html" id="buttonText">NEXT ROUND</a>
-      </button>
+      <a href="round-2.html" class="buttonText" id="nextPage">
+        <button class="actualButton" id="nextRound">NEXT ROUND</button>
+      </a>
     </section>
     <!--Footer-->
     <footer id="footer">Created by Leah Niemasz-Cavanagh</footer>
+    <script src="index.js"></script>
   </body>
 </html>

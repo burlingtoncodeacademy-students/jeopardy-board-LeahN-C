@@ -1,3 +1,4 @@
+<!--Boiler Plate-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,6 +10,7 @@
     <link href="styles/rounds1&2.css" rel="stylesheet" type="text/css" />
     <link href="styles/final-jeopardy.css" rel="stylesheet" type="text/css" />
   </head>
+  <!--Body Element-->
   <body>
     <!--Title-->
     <h1 id="title">Final Jeopardy</h1>
@@ -17,14 +19,19 @@
       <h2 id="playerTurn">PLAYER TURN</h2>
       <h3 id="finalCategory">FINAL CATEGORY</h3>
       <h2 id="finalQ">FINAL QUESTION</h2>
-      <!--Input Fields for User to Bet and Input Final Answer-->
-      <input id="userInput" type="text" placeholder="Point bet amount..." />
-      <input id="userInput" type="text" placeholder="Final answer..." />
+      <!--Form for user to input answer and bet-->
+      <form id="finalInput">
+      <!--Input Fields for Bet and Final Answer-->
+      <input class="userInput" id="finalBet" type="text" placeholder="Point bet amount..." />
+      <input class="userInput" id="finalAnswer" type="text" placeholder="Final answer..." />
+      <!--Bet Button to submit input-->
       <section class="buttonsContainer">
-        <button id="actualButton">BET</button>
+        <button class="actualButton" id="betButton" type="submit">BET</button>
       </section>
+      </form>
     </section>
     <!--Footer-->
     <footer id="footer">Created by Leah Niemasz-Cavanagh</footer>
+    <script src="index.js"></script>
   </body>
 </html>
