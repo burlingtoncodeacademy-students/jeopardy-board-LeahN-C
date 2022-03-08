@@ -1,0 +1,109 @@
+/*The Entire Page*/
+body {
+  /*Using FlexBox display*/
+  display: flex;
+  /*Formatted in a column*/
+  flex-direction: column;
+  /*Content is centered (HORIZONALLY)*/
+  justify-content: center;
+  /*Text is centered in container*/
+  text-align: center;
+  /*Setting background color*/
+  background-color: deepskyblue;
+}
+
+/*The Title*/
+#title {
+  /*FlexBox*/
+  display: flex;
+  /*Content centered (HORIZONTALLY)*/
+  justify-content: center;
+  /*Left side margin*/
+  margin-left: 5rem;
+  /*Right side margin*/
+  margin-right: 5rem;
+  /*Text color*/
+  color: darkorange;
+  /*Outline color of text - SO COOL!!*/
+  -webkit-text-stroke: 2px indigo;
+  /*Size of font*/
+  font-size: xx-large;
+  /*Font style*/
+  font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+/*The Main Page*/
+.mainPage {
+  /*FlexBox*/
+  display: flex;
+  /*Formatted in a column*/
+  flex-direction: column;
+  /*Content in center (HORIZONTALLY)*/
+  justify-content: center;
+  /*Items aligned in center (VERTICALLY)*/
+  align-items: center;
+}
+
+/*Logo Picture on First Page*/
+#firstPageLogo {
+  /*Margin on the left*/
+  margin-left: 5rem;
+  /*Margin on the right*/
+  margin-right: 5rem;
+  /*Border around logo*/
+  border: 1px solid white;
+  /*Margin around whole logo*/
+  margin: 2rem;
+  /*Width of the logo*/
+  width: 45vw;
+}
+
+/*The Play Button on First Page*/
+.playButton {
+  /*FlexBox*/
+  display: flex;
+  /*Horizontal content alignment*/
+  justify-content: center;
+  /*Aligning text in middle of button*/
+  text-align: center;
+  /*Margin around button*/
+  margin: 1.5rem;
+  /*Left side margin*/
+  margin-left: 5rem;
+  /*Right side margin*/
+  margin-right: 5rem;
+  /*Adding padding space within button*/
+  padding: 1rem;
+  /*Color of the button*/
+  background-color: blue;
+  /*Button text color*/
+  color: white;
+}
+
+/*Text on All Buttons*/
+.buttonText {
+  /*Text color on all buttons*/
+  color: whitesmoke;
+  /*Font size on all buttons*/
+  font-size: medium;
+  /*Font style on all buttons*/
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /*No line underneath text on buttons*/
+  text-decoration-line: none;
+}
+
+/*Footer on Every Page*/
+#footer {
+  /*FlexBox*/
+  display: flex;
+  /*Horizontal alignment*/
+  justify-content: center;
+  /*Margin space all around*/
+  margin: 2rem;
+  /*Bottom margin*/
+  margin-bottom: 2rem;
+  /*Color of text*/
+  color: purple;
+  /*Font style*/
+  font-family: cursive;
+}
